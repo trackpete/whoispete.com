@@ -1,0 +1,14 @@
+{
+  "name": "whoispete.com",
+  "version": "1.0.0",
+  "description": "Development environment for my personal web page.",
+  "main": "dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
