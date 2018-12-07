@@ -4,7 +4,9 @@
   "description": "Development environment for my personal web page.",
   "main": "dev.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server devroot --files * --watch",
+    "deploy-dev": "cd devroot && scp -rp . pete@pwx.me:/var/www/wip/ && cd .."
   },
   "author": "",
   "license": "ISC",
