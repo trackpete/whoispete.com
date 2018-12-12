@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "browser-sync start --server devroot --files * --watch",
-    "deploy-dev": "cd devroot && scp -rp . pete@pwx.me:/var/www/wip/ && cd .."
+    "deploy-dev": "rsync -e ssh devroot/ pete@pwx.me:/var/www/wip/ -av --progress"
   },
   "author": "",
   "license": "ISC",

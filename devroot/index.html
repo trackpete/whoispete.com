@@ -66,7 +66,7 @@
         min-height: 100vh;
         width: 100%;
         overflow: hidden;
-        background: url("../content/main-background.jpg");
+        background: url("content/main-background.jpg");
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: bottom center;
@@ -76,12 +76,6 @@
       header .container {
         position: relative;
         z-index: 2;
-      }
-
-      header .fullScreenCarousel {
-        height: 100vh;
-        min-height: 100vh;
-        width: 100%;
       }
 
       header .no-gutters {
@@ -120,9 +114,12 @@
         transform: rotate(220deg);
       }
 
-      .navbar-tl {
-        /* in case I decide to do this again later */
-        background-color: rgba(222, 222, 222, 0);
+      .navbar-custom {
+        background-color: rgba(255, 255, 255, .4);
+      }
+
+      .navbar-collapse {
+        /* tbd */
       }
 
       /* Other CSS */
@@ -134,7 +131,7 @@
 
     <!-- Primary Banner Section -->
     <header>
-      <div id="pageCards">
+      <div id="pageCards" style="padding-top:55px">
         <div
           class="card collapse"
           id="WheelsAndStands"
@@ -725,12 +722,12 @@
 
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-md navbar-light fixed-top navbar-tl"
+      class="navbar navbar-expand-md navbar-light fixed-top navbar-custom"
       id="mainNav"
     >
       <a class="navbar-brand navbar-light dat-700-font">
         <a href="https://www.linkedin.com/in/petewaterman" target="_blank"
-          ><i class="fa fa-linkedin-square fa-3x dat-icon"></i
+          ><i class="fa fa-linkedin-square fa-2x dat-icon"></i
         ></a>
         <a href="https://github.com/trackpete" target="_blank"
           ><i class="fa fa-github fa-2x dat-icon"></i
@@ -763,7 +760,7 @@
             <a class="nav-link" data-toggle="collapse" href="#About">About</a>
           </li>
           <li class="nav-item" style="margin-left:5vw">
-            <span class="navbar-text text-right dat-900-font"
+            <span class="navbar-text text-right dat-900-font" 
               ><i class="fa fa-camera"></i> photos of</span
             >
           </li>
