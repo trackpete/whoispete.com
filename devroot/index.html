@@ -8,7 +8,10 @@
     />
     <title>Photography by Pete Waterman</title>
 
-    <meta name="description" content="Includes photos of my adventures, movement, and headshots." />
+    <meta
+      name="description"
+      content="Includes photos of my adventures, movement, and headshots."
+    />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="generator" content="built by hand like it's 1996" />
@@ -17,8 +20,14 @@
     <meta property="og:url" content="https://example.com/page.html" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Photography by Pete Waterman" />
-    <meta property="og:image" content="https://whoispete.com/content/main-background.jpg" />
-    <meta property="og:description" content="Includes photos of my adventures, movement, and headshots." />
+    <meta
+      property="og:image"
+      content="https://whoispete.com/content/main-background.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Includes photos of my adventures, movement, and headshots."
+    />
     <meta property="og:site_name" content="Who is Pete?" />
     <meta property="og:locale" content="en_US" />
     <meta property="article:author" content="Peter Waterman" />
@@ -29,7 +38,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
-    />    
+    />
 
     <!-- Font Awesome / Fonts / etc. -->
     <link
@@ -44,81 +53,79 @@
 
     <!-- Site CSS - embedding here because it's small and saves one request -->
     <style type="text/css">
-    /* Custom CSS */
+      /* Custom CSS */
 
-    body {
-  background-color: #e0e0eb;
-}
+      body {
+        background-color: #e0e0eb;
+      }
 
-header {
-  position: relative;
-  background-color: whitesmoke;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;  
-  overflow: hidden;
-  background: url("../content/main-background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: bottom center;
-  background-size: cover;
-}
+      header {
+        position: relative;
+        background-color: whitesmoke;
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background: url("../content/main-background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: bottom center;
+        background-size: cover;
+      }
 
-header .container {
-  position: relative;
-  z-index: 2;
-}
+      header .container {
+        position: relative;
+        z-index: 2;
+      }
 
-header .fullScreenCarousel {
-  height: 100vh;
-  min-height: 100vh;
-  width: 100%;  
+      header .fullScreenCarousel {
+        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+      }
 
-}
+      header .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
 
-header .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-  
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
 
-}
+      .dat-700-font {
+        font-weight: 700;
+      }
 
-.dat-700-font {
-  font-weight: 700;
-}
+      .dat-900-font {
+        font-weight: 900;
+      }
 
-.dat-900-font {
-  font-weight: 900;
-}
+      .dat-icon {
+        color: #505050;
+        opacity: 0.4;
+        margin-right: 0.3em;
+      }
 
-.dat-icon {
-  color:#505050;
-  opacity:.4;
-  margin-right: .3em;
-}
+      .dat-handstand-icon {
+        color: #808080;
+        opacity: 0.7;
+        margin-left: 1em;
+        -webkit-transform: rotate(220deg);
+        -moz-transform: rotate(220deg);
+        -ms-transform: rotate(220deg);
+        -o-transform: rotate(220deg);
+        transform: rotate(220deg);
+      }
 
-.dat-handstand-icon {
-  color:#808080;
-  opacity:.7;
-  margin-left: 1em;
-  -webkit-transform: rotate(220deg);
-  -moz-transform: rotate(220deg);
-  -ms-transform: rotate(220deg);
-  -o-transform: rotate(220deg);
-  transform: rotate(220deg);  
-}
+      .navbar-tl {
+        /* in case I decide to do this again later */
+        background-color: rgba(222, 222, 222, 0);
+      }
 
-.navbar-tl {
-  /* in case I decide to do this again later */
-  background-color:rgba(222,222,222, 0);
-}
-
-/* Other CSS */
+      /* Other CSS */
     </style>
   </head>
 
@@ -145,7 +152,7 @@ header .no-gutters {
             <div class="col-6">
               <img src="content/wheelsandstands-03.jpg" width="100%" />
             </div>
-           <div class="col-6">
+            <div class="col-6">
               <img src="content/wheelsandstands-04.jpg" width="100%" />
             </div>
           </div>
@@ -166,7 +173,7 @@ header .no-gutters {
             </div>
           </div>
           <div class="row no-gutters">
-          <div class="col-6">
+            <div class="col-6">
               <img src="content/wheelsandstands-09.jpg" width="100%" />
             </div>
             <div class="col-6">
@@ -199,7 +206,6 @@ header .no-gutters {
             </div>
           </div>
           <div class="row no-gutters">
-
             <div class="col-6">
               <img src="content/wheelsandstands-17.jpg" width="100%" />
             </div>
@@ -633,23 +639,39 @@ header .no-gutters {
             <div class="col-sm-10">
               <h1 class="display-4">Hi! I'm Pete.</h1>
               <p class="lead">
-                <em>For career related information, please see
-                <a
-                  href="https://www.linkedin.com/in/petewaterman"
-                  target="_blank"
-                  >my LinkedIn profile</a
-                >.</em>
+                <em
+                  >For career related information, please see
+                  <a
+                    href="https://www.linkedin.com/in/petewaterman"
+                    target="_blank"
+                    >my LinkedIn profile</a
+                  >.</em
+                >
               </p>
               <hr width="100%" size="1" />
               <p class="h4 font-weight-light">
-                I am a photographer, <a href="https://advrider.com/" target="_blank">motorcycle
-                ADV rider</a>, parkour instructor, avid reader, technology enthusiast, and explorer.<br/><br/>
+                I am a photographer,
+                <a href="https://advrider.com/" target="_blank"
+                  >motorcycle ADV rider</a
+                >, parkour instructor, avid reader, technology enthusiast, and
+                explorer.<br /><br />
               </p>
               <p class="font-weight-light">
-                I grew up in the Philippines and Colombia, returning to the US for college. As an adult I've traveled across most of North America, South America, Europe, significant parts of Asia, and made it into every ocean except the Antarctic.  
-                            </p>
+                I grew up in the Philippines and Colombia, returning to the US
+                for college. As an adult I've traveled across most of North
+                America, South America, Europe, significant parts of Asia, and
+                made it into every ocean except the Antarctic.
+              </p>
               <p class="font-weight-light">
-                Computers have been a part of my life since I was a kid playing games and programming on my big brother's <a href="https://en.wikipedia.org/wiki/Commodore_64" target="_blank">Commodore 64</a>. The internet and UNIX systems came into play for me in 1994 and I received my first paycheck for working with computers and the internet in 1995. I was working overnight at IBM for Y2K!
+                Computers have been a part of my life since I was a kid playing
+                games and programming on my big brother's
+                <a
+                  href="https://en.wikipedia.org/wiki/Commodore_64"
+                  target="_blank"
+                  >Commodore 64</a
+                >. The internet and UNIX systems came into play for me in 1994
+                and I received my first paycheck for working with computers and
+                the internet in 1995. I was working overnight at IBM for Y2K!
               </p>
               <p class="font-weight-light">
                 I took my first digital photo with an
@@ -659,16 +681,42 @@ header .no-gutters {
                   >Olympus C-830L</a
                 >
                 on July 24, 1999 and have taken over 125k digital photos with
-                40+ digital cameras since. Some of these photos have been published in magazines with advertisements and articles, a few in books, and there was a time when many adventure stores had one of my pictures hanging in them. 
+                40+ digital cameras since. Some of these photos have been
+                published in magazines with advertisements and articles, a few
+                in books, and there was a time when many adventure stores had
+                one of my pictures hanging in them.
               </p>
               <p class="font-weight-light">
-                I started <a href="https://www.youtube.com/watch?v=bjBuHvcHcdU" target="_blank">training Parkour</a> in 2009 and became an <a href="http://americanparkour.com/academy/parkour-instructor-certification/" target="_blank">American Parkour Certified Instructor</a> and teaching weekly classes in 2013. Parkour and movement is obviously a big outlet for my creativity. Sign up for our <a href="http://americanparkour.com/academy/washington-dc/" target="_blank">Parkour Foundations class at the APK Academy in DC</a> and you'll run into me!
+                I started
+                <a
+                  href="https://www.youtube.com/watch?v=bjBuHvcHcdU"
+                  target="_blank"
+                  >training Parkour</a
+                >
+                in 2009 and became an
+                <a
+                  href="http://americanparkour.com/academy/parkour-instructor-certification/"
+                  target="_blank"
+                  >American Parkour Certified Instructor</a
+                >
+                and teaching weekly classes in 2013. Parkour and movement is
+                obviously a big outlet for my creativity. Sign up for our
+                <a
+                  href="http://americanparkour.com/academy/washington-dc/"
+                  target="_blank"
+                  >Parkour Foundations class at the APK Academy in DC</a
+                >
+                and you'll run into me!
               </p>
               <hr width="100%" size="1" />
               <p class="font-weight-light">
-                You can find out a bit more about me and see some of the content I've producted by clicking around this site or hitting the icons on top!
+                You can find out a bit more about me and see some of the content
+                I've producted by clicking around this site or hitting the icons
+                on top!
               </p>
-              <p class="font-weight-bold">pete@pwx.me<br/>Washington, DC, 20001</p>
+              <p class="font-weight-bold">
+                pete@pwx.me<br />Washington, DC, 20001
+              </p>
             </div>
           </div>
         </div>
@@ -696,8 +744,6 @@ header .no-gutters {
           title="I don't reddit anonymously and you'll find it if you look for it, so might as well..."
           ><i class="fa fa-reddit fa-sm dat-icon"></i
         ></a>
- 
-        
       </a>
 
       <button
@@ -709,8 +755,7 @@ header .no-gutters {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <!-- collapse text -->
-        <i class="fa fa-bars"></i>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto text-right dat-700-font">
@@ -763,5 +808,12 @@ header .no-gutters {
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- Toggles the nav menu closed on click -->
+    <script>
+      $(".navbar-nav>li>a").on("click", function() {
+        $(".navbar-collapse").collapse("hide");
+        window.scrollTo(0,0);
+      });
+    </script>
   </body>
 </html>
