@@ -11,4 +11,3 @@ At some point I intend to deploy it on AWS S3/Cloudfront but right now I have ot
 I wrote this entirely by hand with Bootstrap 4 to get some updated experience with the grid system and touch base with my roots. No templates/etc. were used.
 
 Considering how many images are involved and whatnot, it would probably be more performant as a React Single Page App.
-
