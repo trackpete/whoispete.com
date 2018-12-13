@@ -64,7 +64,7 @@
         background-color: whitesmoke;
         height: 100%;
         min-height: 100vh;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
         background: url("content/main-background.jpg");
         background-repeat: no-repeat;
@@ -99,8 +99,6 @@
 
       .dat-icon {
         color: #505050;
-        opacity: 0.4;
-        margin-right: 0.3em;
       }
 
       .dat-handstand-icon {
@@ -115,7 +113,7 @@
       }
 
       .navbar-custom {
-        background-color: rgba(255, 255, 255, .4);
+        background-color: rgba(255, 255, 255, 0.4);
       }
 
       .navbar-collapse {
@@ -627,29 +625,88 @@
           class="card collapse"
           id="About"
           data-parent="#pageCards"
-          style="background-color: transparent;padding: 10%;width: 100%"
+          style="min-height:100vh"
         >
+          <img src="content/about-01.jpg" width="100%" />
 
+          <div class="row" style="padding-top:20px">
+            <div class="col-sm-6">
+              <p class="h1 text-right">Peter Waterman</p>
+              <p class="h6 text-right font-weight-light">
+                <em>Washington, DC, since 2005</em>
+              </p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <a href="https://www.linkedin.com/in/petewaterman" target="_blank"
+                ><i class="fa fa-linkedin-square fa-3x dat-icon"></i></a
+              >&nbsp;
+              <a href="https://github.com/trackpete" target="_blank"
+                ><i class="fa fa-github fa-3x dat-icon"></i></a
+              >&nbsp;
+              <a href="https://youtube.com/trackpete" target="_blank"
+                ><i class="fa fa-youtube fa-3x dat-icon"></i
+              ></a>
+              <br />
+              <p class="h6 dat-icon">pete@pwx.me</p>
+            </div>
+          </div>
 
-        <a href="https://www.linkedin.com/in/petewaterman" target="_blank"
-        ><i class="fa fa-linkedin-square fa-2x dat-icon"></i
-      ></a>
-      <a href="https://github.com/trackpete" target="_blank"
-        ><i class="fa fa-github fa-lg dat-icon"></i
-      ></a>
-      <a href="https://youtube.com/trackpete" target="_blank"
-        ><i class="fa fa-youtube fa-lg dat-icon"></i
-      ></a>
-      <a
-        href="https://reddit.com/user/trackpete"
-        target="_blank"
-        title="I don't reddit anonymously and you'll find it if you look for it, so might as well..."
-        ><i class="fa fa-reddit fa-sm dat-icon"></i
-      ></a>
-
-
-
-
+          <hr width="90%" size="1" />
+          <p class="lead">
+            I am a photographer,
+            <a href="https://advrider.com/" target="_blank"
+              >motorcycle ADV rider</a
+            >, parkour instructor, avid reader, technology enthusiast, and
+            explorer.
+          </p>
+          <p class="font-weight-light">
+            I grew up in the Philippines and Colombia, returning to the US for
+            college. As an adult I've traveled across most of North America,
+            South America, Europe, significant parts of Asia, and made it into
+            every ocean except the Antarctic.
+          </p>
+          <p class="font-weight-light">
+            Computers have been a part of my life since I was a kid playing
+            games and programming on my big brother's
+            <a href="https://en.wikipedia.org/wiki/Commodore_64" target="_blank"
+              >Commodore 64</a
+            >. The internet and UNIX systems came into play for me in 1994 and I
+            received my first paycheck for working with computers and the
+            internet in 1995. I was working overnight at IBM for Y2K!
+          </p>
+          <p class="font-weight-light">
+            I took my first digital photo with an
+            <a href="http://camera-wiki.org/wiki/Olympus_C-830L" target="_blank"
+              >Olympus C-830L</a
+            >
+            on July 24, 1999 and have taken over 125k digital photos with 40+
+            digital cameras since. Some of these photos have been published in
+            magazines with advertisements and articles, a few in books, and
+            there was a time when many adventure stores had one of my pictures
+            hanging in them.
+          </p>
+          <p class="font-weight-light">
+            I started
+            <a
+              href="https://www.youtube.com/watch?v=bjBuHvcHcdU"
+              target="_blank"
+              >training Parkour</a
+            >
+            in 2009 and became an
+            <a
+              href="http://americanparkour.com/academy/parkour-instructor-certification/"
+              target="_blank"
+              >American Parkour Certified Instructor</a
+            >
+            and teaching weekly classes in 2013. Parkour and movement is
+            obviously a big outlet for my creativity. Sign up for our
+            <a
+              href="http://americanparkour.com/academy/washington-dc/"
+              target="_blank"
+              >Parkour Foundations class at the APK Academy in DC</a
+            >
+            and you'll run into me!
+          </p>
         </div>
       </div>
     </header>
@@ -659,9 +716,9 @@
       class="navbar navbar-expand-md navbar-light fixed-top navbar-custom"
       id="mainNav"
     >
-      <a class="navbar-brand navbar-light dat-700-font">
-Peter Waterman
-      </a>
+      <!--
+        <a class="navbar-brand navbar-light dat-700-font"> Photos by Pete! </a>
+      -->
 
       <button
         class="navbar-toggler"
@@ -677,10 +734,12 @@ Peter Waterman
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto text-right dat-700-font">
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#About">About</a>
+            <a class="nav-link" data-toggle="collapse" href="#About"
+              >I'm Pete!</a
+            >
           </li>
           <li class="nav-item" style="margin-left:5vw">
-            <span class="navbar-text text-right dat-900-font" 
+            <span class="navbar-text text-right dat-900-font"
               ><i class="fa fa-camera"></i> photos of</span
             >
           </li>
@@ -729,7 +788,7 @@ Peter Waterman
     <script>
       $(".navbar-nav>li>a").on("click", function() {
         $(".navbar-collapse").collapse("hide");
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
       });
     </script>
   </body>
