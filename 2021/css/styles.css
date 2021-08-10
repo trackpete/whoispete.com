@@ -1,16 +1,68 @@
-ul {
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+h1,
+p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 4em;
+  font-weight: 600;
+}
+
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 2em;
+}
+
+.image-main {
   display: flex;
-  flex-wrap: wrap;
+  background-image: url("/img/main.jpg");
+  height: 65%;
+  background-size: cover;
+  background-position: bottom center;
 }
 
-li {
-  height: 40vh;
-  flex-grow: 1;
+.text-main {
+  height: 30%;
+  background-color: chocolate;
+  padding: 2vw;
 }
 
-img {
-  max-height: 100%;
-  min-width: 100%;
+.text-main h1 {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  }
+}
+
+@media (min-width: 1900px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+}
+
+.images-grid img {
+  max-width: 100%;
   object-fit: cover;
-  vertical-align: bottom;
 }
