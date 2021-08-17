@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-  --min: 2em;
-  --val: 3vw;
+  --min: 1em;
+  --val: 2vw;
   --max: 2em;
   font-weight: 100;
   color: #505050;
