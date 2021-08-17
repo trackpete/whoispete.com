@@ -6,6 +6,8 @@ html {
 }
 
 h1,
+h2,
+h3,
 p {
   font-size: clamp(var(--min), var(--val), var(--max));
 }
@@ -17,28 +19,51 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  --min: 2em;
+  --val: 3vw;
+  --max: 2em;
+  font-weight: 600;
+  margin-top: 1vw;
+}
+
+h3 {
+  --min: 2em;
+  --val: 3vw;
+  --max: 2em;
+  font-weight: 600;
+  margin-top: 1vw;
+}
+
 p {
   --min: 1em;
-  --val: 2.5vw;
+  --val: 1vw;
   --max: 2em;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .image-main {
   display: flex;
   background-image: url("/img/main.jpg");
-  height: 65%;
+  height: 100%;
   background-size: cover;
   background-position: bottom center;
+  text-align: center;
 }
 
 .text-main {
-  height: 30%;
-  background-color: chocolate;
-  padding: 2vw;
+  position: relative;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-.text-main h1 {
-  text-align: center;
+.dat-icon {
+  color: #505050;
 }
 
 @media (max-width: 1200px) {
