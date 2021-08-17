@@ -24,7 +24,6 @@ h2 {
   --val: 3vw;
   --max: 2em;
   font-weight: 600;
-  margin-top: 1vw;
 }
 
 h3 {
@@ -32,15 +31,14 @@ h3 {
   --val: 3vw;
   --max: 2em;
   font-weight: 600;
-  margin-top: 1vw;
 }
 
 p {
   --min: 1em;
   --val: 1vw;
   --max: 2em;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .image-main {
@@ -57,7 +55,7 @@ p {
   width: 100%;
   color: black;
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 2vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
