@@ -17,13 +17,15 @@ h1 {
   --val: 5vw;
   --max: 4em;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 h2 {
   --min: 2em;
   --val: 3vw;
   --max: 2em;
-  font-weight: 600;
+  font-weight: 200;
+  color: #505050;
 }
 
 h3 {
@@ -31,14 +33,15 @@ h3 {
   --val: 3vw;
   --max: 2em;
   font-weight: 600;
-  margin-top: 5vh;
-  margin-bottom: 1vh;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 p {
   --min: 1em;
   --val: 1vw;
   --max: 2em;
+  color: #505050;
 }
 
 .image-main {
