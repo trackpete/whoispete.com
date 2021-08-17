@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h1,
@@ -16,7 +16,7 @@ h1 {
   --min: 2em;
   --val: 5vw;
   --max: 4em;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -24,7 +24,7 @@ h2 {
   --min: 2em;
   --val: 3vw;
   --max: 2em;
-  font-weight: 200;
+  font-weight: 100;
   color: #505050;
 }
 
