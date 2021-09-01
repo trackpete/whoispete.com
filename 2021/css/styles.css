@@ -67,6 +67,20 @@ p {
   color: #505050;
 }
 
+a:link {
+  color: #505050;
+  text-decoration: underline dotted;
+}
+a:visited {
+  color: #505050;
+}
+a:hover {
+  color: #505050;
+}
+a:active {
+  color: #505050;
+}
+
 @media (max-width: 1200px) {
   .images-grid {
     display: grid;
