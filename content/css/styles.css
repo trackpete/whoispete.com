@@ -1,0 +1,110 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 4em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #404040;
+}
+
+h2 {
+  --min: 1em;
+  --val: 2vw;
+  --max: 2em;
+  font-weight: 100;
+  color: #404040;
+}
+
+h3 {
+  --min: 2em;
+  --val: 3vw;
+  --max: 2em;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #404040;
+}
+
+p {
+  --min: 1em;
+  --val: 1vw;
+  --max: 2em;
+  color: #505050;
+}
+
+.image-main {
+  display: flex;
+  background-image: url("/img/main.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: bottom center;
+  text-align: center;
+}
+
+.text-main {
+  position: relative;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.dat-icon {
+  color: #505050;
+}
+
+a:link {
+  color: #505050;
+  text-decoration: underline dotted;
+}
+a:visited {
+  color: #505050;
+}
+a:hover {
+  color: #505050;
+}
+a:active {
+  color: #505050;
+}
+
+@media (max-width: 1200px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  }
+}
+
+@media (min-width: 1900px) {
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  }
+}
+
+.images-grid img {
+  max-width: 100%;
+  object-fit: cover;
+}
